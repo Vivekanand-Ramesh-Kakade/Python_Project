@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <body style="font-family: Arial, sans-serif; color: #111;">
+    <h2>New contact submission</h2>
+    <p><strong>Name:</strong> {{ name }}</p>
+    <p><strong>Email:</strong> {{ email }}</p>
+    {% if phone %}
+      <p><strong>Phone:</strong> {{ phone }}</p>
+    {% endif %}
+    <p><strong>Subject:</strong> {{ subject }}</p>
+    <hr />
+    <p><strong>About:</strong></p>
+    <p style="white-space: pre-wrap;">{{ about }}</p>
+    <hr />
+    <p><small>Submission ID: {{ submission_id }}</small></p>
+  </body>
+</html>
